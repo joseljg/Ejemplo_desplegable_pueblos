@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/sp_comunidad"
+        android:layout_width="283dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="46dp"
+        android:contentDescription="comunidades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/sp_provincia"
+        android:layout_width="283dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="comunidades"
+        app:layout_constraintEnd_toEndOf="@+id/sp_comunidad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sp_comunidad"
+        app:layout_constraintTop_toBottomOf="@+id/sp_comunidad" />
+
+    <Spinner
+        android:id="@+id/sp_pueblo"
+        android:layout_width="283dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="comunidades"
+        app:layout_constraintEnd_toEndOf="@+id/sp_provincia"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/sp_provincia"
+        app:layout_constraintTop_toBottomOf="@+id/sp_provincia" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
